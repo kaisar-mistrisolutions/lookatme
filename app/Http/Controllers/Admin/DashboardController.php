@@ -14,4 +14,8 @@ class DashboardController extends Controller
     public function profile(){
         return view('admin.profile');
     }
+
+    public function magazine(){
+        return view('frontend.magazine');
+    }
 }

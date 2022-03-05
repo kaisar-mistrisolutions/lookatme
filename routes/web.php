@@ -30,9 +30,8 @@ Route::group(['as'=>'admin.','prefix'=>'admin','middleware'=>['auth','admin']],f
 
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('admin/profile', [DashboardController::class, 'profile'])->name('admin.profile');
-
-
-    
     
 
 });
+
+Route::get('magazine', [DashboardController::class, 'magazine'])->name('magazine');
